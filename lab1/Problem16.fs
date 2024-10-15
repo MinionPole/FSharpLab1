@@ -10,10 +10,12 @@ let rec power (aaa: bigint) (exponent: bigint) : bigint =
 let getAnsWithMap (n: bigint) =
     let number = power 2I n
 
-    number.ToString().ToCharArray()
-    |> Array.map (fun c -> (int c - int '0'))
-    |> Array.filter (fun elem -> elem > 0)
-    |> Array.sum
+    string (
+        number.ToString().ToCharArray()
+        |> Array.map (fun c -> (int c - int '0'))
+        |> Array.filter (fun elem -> elem > 0)
+        |> Array.sum
+    )
 
 let rec powerTail (aaa: bigint) (exponent: bigint) (acc: bigint) : bigint =
     if exponent = 0I then
@@ -29,6 +31,6 @@ let sumOfDigitsUsingWhile (n: bigint) =
         sum <- sum + (int) (value % 10I)
         value <- value / 10I
 
-    sum
+    string sum
 
 let solutions = [ sumOfDigitsUsingWhile 1000, getAnsWithMap 1000 ]

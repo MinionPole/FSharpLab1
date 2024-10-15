@@ -22,14 +22,14 @@ let solveWithFor x =
 
             results <- newList :: results
 
-    (List.rev results).[x].[x]
+    string ((List.rev results).[x].[x])
 
 
 let rec factorial (n: bigint) : bigint =
     if n = 0I then 1I else n * factorial (n - 1I)
 
 let solveWithFact n =
-    (factorial (2I * n)) / factorial n / factorial n
+    string ((factorial (2I * n)) / factorial n / factorial n)
 
 let factorialTailRec (n: bigint) : bigint =
     let rec aux acc n =
@@ -43,7 +43,6 @@ let denominator = Seq.initInfinite (bigint >> factorial)
 let getAnsFromLazyCollections x =
     let numeratorOb = numerator |> Seq.take (x + 1) |> Seq.toList
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
-    numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x]
+    string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
-let solutions =
-    [ solveWithFor 20, solveWithFact 20I, factorialTailRec 20I, getAnsFromLazyCollections 20 ]
+let solutions = [ solveWithFor 20, solveWithFact 20I, getAnsFromLazyCollections 20 ]
