@@ -38,8 +38,8 @@ let factorialTailRec (n: bigint) : bigint =
 
     aux 1I n
 
-let numerator = Seq.initInfinite (fun i -> factorial (bigint (i) * 2I))
-let denominator = Seq.initInfinite (bigint >> factorial)
+let numerator = Seq.initInfinite (fun i -> factorialTailRec (bigint (i) * 2I))
+let denominator = Seq.initInfinite (bigint >> factorialTailRec)
 
 let getAnsFromLazyCollections (x: int) =
     let numeratorOb = numerator |> Seq.take (x + 1) |> Seq.toList
