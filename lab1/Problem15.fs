@@ -1,6 +1,6 @@
 ﻿module Problem15
 
-let solveWithFor (x: bigint) =
+let solveWithFor (x: int) =
     let mutable results = []
 
     for i in 0..x do
@@ -40,7 +40,7 @@ let factorialTailRec (n: bigint) : bigint =
 let numerator = Seq.initInfinite (fun i -> factorial (bigint (i) * 2I))
 let denominator = Seq.initInfinite (bigint >> factorial)
 
-let getAnsFromLazyCollections (x: bigint) =
+let getAnsFromLazyCollections (x: int) =
     let numeratorOb = numerator |> Seq.take (x + 1) |> Seq.toList
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
