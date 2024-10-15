@@ -118,11 +118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/roman/labs/F#/lab1_1/FirstIonideProject/FirstIonideProject.fsproj",
-      "projectName": "FirstIonideProject",
-      "projectPath": "/home/roman/labs/F#/lab1_1/FirstIonideProject/FirstIonideProject.fsproj",
+      "projectUniqueName": "/home/roman/labs/F#/FSharpLab1/lab1/lab1.fsproj",
+      "projectName": "lab1",
+      "projectPath": "/home/roman/labs/F#/FSharpLab1/lab1/lab1.fsproj",
       "packagesPath": "/home/roman/.nuget/packages/",
-      "outputPath": "/home/roman/labs/F#/lab1_1/FirstIonideProject/obj/",
+      "outputPath": "/home/roman/labs/F#/FSharpLab1/lab1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/roman/.nuget/NuGet/NuGet.Config"

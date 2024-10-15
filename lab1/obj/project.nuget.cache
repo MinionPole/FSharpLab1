@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G5KZmF4BFUTgE8rJPpUHIhR+L+K7gcvysf4gEaIP6RQC6fLAkPz0+Kgx9SNbYMOVaaNN6iqWhW9WCw4JTaMoJQ==",
+  "dgSpecHash": "eXMfF74/X18TavgatfnzpCBWhPTSHb/CxGZlRmik8epyd8jQN8ceJDC7/XsErvR+WfGLtySMorLkb2/00C4V9g==",
   "success": true,
-  "projectFilePath": "/home/roman/labs/F#/lab1_1/FirstIonideProject/FirstIonideProject.fsproj",
+  "projectFilePath": "/home/roman/labs/F#/FSharpLab1/lab1/lab1.fsproj",
   "expectedPackageFiles": [
     "/home/roman/.nuget/packages/fsharp.core/6.0.1/fsharp.core.6.0.1.nupkg.sha512"
   ],
