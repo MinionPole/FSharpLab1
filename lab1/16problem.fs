@@ -23,10 +23,10 @@ let rec powerTail (aaa: bigint) (exponent: bigint) (acc: bigint) : bigint =
 
 let sumOfDigitsUsingWhile (n: bigint) =
     let mutable value = powerTail 2I n 1I
-    let mutable sum = 0I
+    let mutable sum = 0
 
     while value > 0I do
-        sum <- sum + (value % 10I)
+        sum   <- sum + (value % 10I)
         value <- value / 10I
 
     sum

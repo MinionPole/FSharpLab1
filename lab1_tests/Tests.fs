@@ -10,7 +10,7 @@ let ``My test`` () = Assert.True(true)
 let ``Check Problem 15`` () =
     Problem15.solutions
     |> List.iter (fun solution ->
-        let res: int = solution ()
+        let res: bigint = solution ()
         Assert.Equal(res, 137846528820I))
 
 [<Fact>]
