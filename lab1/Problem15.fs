@@ -1,6 +1,7 @@
 ﻿module Problem15
 
-let solveWithFor (x: int) =
+let solveWithFor =
+    let x = 20
     let mutable results = []
 
     for i in 0..x do
@@ -45,4 +46,4 @@ let getAnsFromLazyCollections (x: int) =
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
-let solutions = [ getAnsFromLazyCollections ]
+let solutions = [ solveWithFor ]
