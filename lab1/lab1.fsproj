@@ -10,8 +10,4 @@
     <Compile Include="15problem.fs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="8.0.0" />
-  </ItemGroup>
-
 </Project>
