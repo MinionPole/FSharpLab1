@@ -1,11 +1,11 @@
 ﻿module Problem15
 
-let solveWithFor (x: bigint) =
+let solveWithFor x =
     let mutable results = []
 
     for i in 0..x do
         if i = 0 then
-            let onesList = List.replicate (x + 1I) 1I
+            let onesList = List.replicate (x + 1) 1I
             results <- onesList :: results
         else
             let previousList = List.head results
@@ -40,9 +40,9 @@ let factorialTailRec (n: bigint) : bigint =
 let numerator = Seq.initInfinite (fun i -> factorial (bigint (i) * 2I))
 let denominator = Seq.initInfinite (bigint >> factorial)
 
-let getAnsFromLazyCollections (x: bigint) =
-    let numeratorOb = numerator |> Seq.take (x + 1I) |> Seq.toList
-    let denominatorOb = denominator |> Seq.take (x + 1I) |> Seq.toList
+let getAnsFromLazyCollections x =
+    let numeratorOb = numerator |> Seq.take (x + 1) |> Seq.toList
+    let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
 let solutions = [ solveWithFor; solveWithFact; getAnsFromLazyCollections ]
