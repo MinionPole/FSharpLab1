@@ -41,10 +41,9 @@ let factorialTailRec (n: bigint) : bigint =
 let numerator = Seq.initInfinite (fun i -> factorial (bigint (i) * 2I))
 let denominator = Seq.initInfinite (bigint >> factorial)
 
-let getAnsFromLazyCollections =
-    let x = 20
+let getAnsFromLazyCollections (x: int) =
     let numeratorOb = numerator |> Seq.take (x + 1) |> Seq.toList
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
-let solutions = [ solveWithFor ]
+let solutions = [ getAnsFromLazyCollections ]
