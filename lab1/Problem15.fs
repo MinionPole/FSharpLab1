@@ -1,7 +1,6 @@
 ﻿module Problem15
 
-let solveWithFor =
-    let x = 20
+let solveWithFor (x: int) =
     let mutable results = []
 
     for i in 0..x do
