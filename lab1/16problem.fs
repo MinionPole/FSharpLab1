@@ -26,7 +26,7 @@ let sumOfDigitsUsingWhile (n: bigint) =
     let mutable sum = 0
 
     while value > 0I do
-        sum   <- sum + (value % 10I)
+        sum <- sum + (value % 10I)
         value <- value / 10I
 
     sum
