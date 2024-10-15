@@ -1,0 +1,3 @@
+/home/roman/labs/F#/FSharpLab1/lab1_tests/obj/Debug/net6.0/lab1_tests.fsproj.AssemblyReference.cache
+/home/roman/labs/F#/FSharpLab1/lab1_tests/obj/Debug/net6.0/lab1_tests.AssemblyInfoInputs.cache
+/home/roman/labs/F#/FSharpLab1/lab1_tests/obj/Debug/net6.0/lab1_tests.AssemblyInfo.fs
