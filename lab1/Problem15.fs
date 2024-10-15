@@ -29,7 +29,8 @@ let solveWithFor =
 let rec factorial (n: bigint) : bigint =
     if n = 0I then 1I else n * factorial (n - 1I)
 
-let solveWithFact n =
+let solveWithFact =
+    let n = 20
     string ((factorial (2I * n)) / factorial n / factorial n)
 
 let factorialTailRec (n: bigint) : bigint =
@@ -47,4 +48,4 @@ let getAnsFromLazyCollections =
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
-let solutions = [ getAnsFromLazyCollections ]
+let solutions = [ solveWithFact ]
