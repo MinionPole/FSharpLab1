@@ -29,8 +29,8 @@ let solveWithFor =
 let rec factorial (n: bigint) : bigint =
     if n = 0I then 1I else n * factorial (n - 1I)
 
-let solveWithFact =
-    let n = 20
+let solveWithFact x =
+    let n = (bigint x)
     string ((factorial (2I * n)) / factorial n / factorial n)
 
 let factorialTailRec (n: bigint) : bigint =
