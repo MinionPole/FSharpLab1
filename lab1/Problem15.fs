@@ -45,4 +45,4 @@ let getAnsFromLazyCollections x =
     let denominatorOb = denominator |> Seq.take (x + 1) |> Seq.toList
     string (numeratorOb.[x] / denominatorOb.[x] / denominatorOb.[x])
 
-let solutions = [ solveWithFor 20, solveWithFact 20I, getAnsFromLazyCollections 20 ]
+let solutions = [ solveWithFor, solveWithFact, getAnsFromLazyCollections ]

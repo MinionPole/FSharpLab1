@@ -33,4 +33,4 @@ let sumOfDigitsUsingWhile (n: bigint) =
 
     string sum
 
-let solutions = [ sumOfDigitsUsingWhile 1000, getAnsWithMap 1000 ]
+let solutions = [ sumOfDigitsUsingWhile, getAnsWithMap ]
