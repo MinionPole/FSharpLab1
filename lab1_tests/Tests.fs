@@ -11,6 +11,7 @@ let ``Check Problem 15`` () =
     Problem15.solutions
     |> List.iter (fun solution ->
         let actual = solution 20 // вызываем решение, чтобы получить результат
+        printfn "DATA IS: %s" actual
         Assert.Equal("137846528820", actual))
 
 [<Fact>]
