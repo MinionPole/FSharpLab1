@@ -7,6 +7,13 @@ open Xunit
 let ``My test`` () = Assert.True(true)
 
 [<Fact>]
+let ``Check Problem 15`` () =
+    Problem15.solutions
+    |> List.iter (fun solution ->
+        let actual = solution 20 // вызываем решение, чтобы получить результат
+        Assert.Equal("137846528820", actual))
+
+[<Fact>]
 let ``Check Problem 16`` () =
     Problem16.solutions
     |> List.iter (fun solution ->
